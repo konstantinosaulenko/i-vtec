@@ -1,0 +1,23 @@
+.slogan {
+  &__text {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 58px;
+    margin: 0;
+    
+    @media (max-width: 1200px) {
+      font-size: 30px;
+      line-height: 48px;
+    }
+    
+    @media (max-width: 1200px) {
+      font-size: 25px;
+      line-height: 38px;
+    }
+    
+    @media (max-width: 450px) {
+      font-size: 20px;
+      line-height: 31px;
+    }
+  }
+}

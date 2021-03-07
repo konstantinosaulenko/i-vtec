@@ -30,6 +30,14 @@
         </div>
       </section>
 
+      <section class="section slogan">
+        <div class="container">
+          <p class="slogan__text">
+            "i-vtec" - интернет-магазин, в котором можно не только ознакомиться с нашим ассортиментом, но и сделать
+            покупку.
+          </p>
+        </div>
+      </section>
     </main>
 
     <Footer/>
