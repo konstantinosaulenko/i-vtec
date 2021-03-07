@@ -5,8 +5,7 @@
   >
     <div :class="`${card_data.class}__card-top`">
       <img 
-        :src="require(`@/assets/img/${card_data.img}`)" 
-        alt="" 
+        :src="require(`@/assets/img/${card_data.img}`)"  
         :class="`${card_data.class}__card-img`"
       >
       <div :class="`${card_data.class}__card-title`">{{ card_data.title }}</div>

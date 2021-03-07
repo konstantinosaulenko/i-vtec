@@ -1,8 +1,26 @@
 <template>
   <div id="app">
     <Header/>
-
     <main>
+      <section class="section hero">
+        <MainSlider/>
+
+        <nav class="hero__breadcrumbs">
+          <a href="#" class="hero__breadcrumbs-link">Воздухозаборники</a>
+          <img class="hero__breadcrumbs-link-arrow" src="img/icons/arrow-next.svg" alt="">
+          <a href="#" class="hero__breadcrumbs-link">Интерьер</a>
+          <img class="hero__breadcrumbs-link-arrow" src="img/icons/arrow-next.svg" alt="">
+          <a href="#" class="hero__breadcrumbs-link">Колесные гайки</a>
+          <img class="hero__breadcrumbs-link-arrow" src="img/icons/arrow-next.svg" alt="">
+          <a href="#" class="hero__breadcrumbs-link">Пластины противоотливные</a>
+          <img class="hero__breadcrumbs-link-arrow" src="img/icons/arrow-next.svg" alt="">
+          <!-- <a href="#" class="hero__breadcrumbs-link">Пластины радиатора</a>
+          <a href="#" class="hero__breadcrumbs-link">Рычаги подвески</a>
+          <a href="#" class="hero__breadcrumbs-link">Усилители кузова</a>
+          <a href="#" class="hero__breadcrumbs-link">Экстерьер</a> -->
+        </nav>
+      </section>
+
       <section class="section catalog">
         <div class="container">
           <h2 class="section__title">Каталог</h2>
@@ -39,7 +57,6 @@
         </div>
       </section>
     </main>
-
     <Footer/>
   </div>
 </template>
@@ -47,6 +64,7 @@
 <script>
 import Header from '@/components/Header'
 import Card from '@/components/Card'
+import MainSlider from '@/components/MainSlider'
 import Footer from '@/components/Footer'
 
 export default {
@@ -98,6 +116,7 @@ export default {
   components: {
     Header,
     Card,
+    MainSlider,
     Footer
   }
 }
