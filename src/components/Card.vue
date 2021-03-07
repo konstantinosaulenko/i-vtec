@@ -3,12 +3,26 @@
     class="card"
     :class="`${card_data.class}__card`"
   >
-    <img 
-      :src="require(`@/assets/img/${card_data.img}`)" 
-      alt="" 
-      :class="`${card_data.class}__card-img`"
+    <div :class="`${card_data.class}__card-top`">
+      <img 
+        :src="require(`@/assets/img/${card_data.img}`)" 
+        alt="" 
+        :class="`${card_data.class}__card-img`"
+      >
+      <div :class="`${card_data.class}__card-title`">{{ card_data.title }}</div>
+    </div>
+    <div
+      v-if="card_data.text" 
+      :class="`${card_data.class}__card-text`"
     >
-    <div :class="`${card_data.class}__card-title`">{{ card_data.title }}</div>
+      {{ card_data.text }}
+    </div>
+    <div
+      v-if="card_data.count" 
+      :class="`${card_data.class}__card-count`"
+    >
+      {{ card_data.count }}
+    </div>
   </a>
 </template>
 
