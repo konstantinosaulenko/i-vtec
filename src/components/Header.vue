@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <div class="header__burger">
+      <div class="header__burger" @click="showMenu">
         <div class="header__burger-item"></div>
         <div class="header__burger-item"></div>
         <div class="header__burger-item"></div>
@@ -68,7 +68,12 @@
 <script>
   export default {
     name: 'Header',
-    components: {}
+    components: {},
+    methods: {
+      showMenu() {
+        document.querySelector('.mobile-menu').classList.add('mobile-menu_active')
+      }
+    }
   }
 </script>
 
