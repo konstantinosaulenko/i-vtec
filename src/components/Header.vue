@@ -7,11 +7,36 @@
         <div class="header__burger-item"></div>
       </div>
       <nav class="header__nav">
-        <a href="#" class="header__nav-link">Главная</a>
-        <a href="#" class="header__nav-link">Каталог</a>
-        <a href="/" class="header__nav-link header__nav-link_logo">i-vtec</a>
-        <a href="#" class="header__nav-link">Оплата</a>
-        <a href="#" class="header__nav-link">О компании</a>
+        <router-link
+          to="/"
+          class="header__nav-link"
+        >
+          Главная
+        </router-link>
+        <router-link
+          to="/catalog"
+          class="header__nav-link"
+        >
+          Каталог
+        </router-link>
+        <router-link
+          to="/"
+          class="header__nav-link header__nav-link_logo"
+        >
+          i-vtec
+        </router-link>
+        <router-link
+          to="/"
+          class="header__nav-link"
+        >
+          Оплата
+        </router-link>
+        <router-link
+          to="/"
+          class="header__nav-link"
+        >
+          О компании
+        </router-link>
       </nav>
       <div class="header__bottom">
         <div class="header__search-mobile">
