@@ -64,3 +64,46 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+.pagination {
+  &__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #000000;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    transition: 0.4s;
+    
+    &:hover {
+      color: #FFFFFF;
+      background-color: #000000;
+    }
+    
+    &_active {
+      color: #FFFFFF;
+      background-color: #000000;
+      
+      &:hover {
+        color: #000000;
+        background-color: #FFFFFF;
+      }
+    }
+  }
+  
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}

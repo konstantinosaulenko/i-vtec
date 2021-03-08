@@ -1,0 +1,109 @@
+.catalog-page {
+  img {
+    user-select: none;
+  }
+
+  .catalog {
+    &__cards {
+      margin-bottom: 100px;
+    }
+    
+    &__card {
+      width: 33%;
+      padding: 20px;
+
+      @media (max-width: 992px) {
+        width: 50%;
+      }
+
+      @media (max-width: 750px) {
+        width: 100%;
+      }
+      
+      &:hover {
+        transform: scale(1);
+      }
+      
+      &-top {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0 5px;
+      }
+      
+      &-title {
+        text-align: left;
+        font-size: 20px;
+        line-height: 33px;
+        color: #000000;
+        margin-top: 0;
+      }
+      
+      &-price {
+        width: 100px;
+        text-align: right;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 22px;
+        color: #000000;
+        white-space: nowrap;
+      }
+      
+      &-article {
+        margin-bottom: 10px;
+      }
+
+      &-article, 
+      &-quantity {
+        font-size: 14px;
+        line-height: 22px;
+        color: #6E6E6E;
+      }
+      
+      &-basket {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        height: 64px;
+        
+        &-counter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 2px solid #000000;
+          border-radius: 50px;
+          padding: 0 17px;
+          width: 90px;
+          
+          &-number {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            user-select: none;
+          }
+          
+          &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+        }
+        
+        &-btn {
+          width: 225px;
+          transition: 0.4s;
+          user-select: none;
+          
+          &_active {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  } 
+}
